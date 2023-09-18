@@ -6,10 +6,10 @@ class ChitChatGenerator:
         self,
     ):
         self.chitchat_model = T5ForConditionalGeneration.from_pretrained(
-            "madhavappaneni/t5-small-chit-chat-conv",
+            "madhavappaneni/t5-small-chit-chat-conv"
         )
         self.chitchat_tokenizer = T5Tokenizer.from_pretrained(
-            "madhavappaneni/t5-small-chit-chat-conv",
+            "madhavappaneni/t5-small-chit-chat-conv"
         )
 
     def generate_response(self, input_text, context):
