@@ -16,9 +16,9 @@ This project aims to create an end-to-end conversational system capable of deliv
 
 ### Training and Inference
 
-The models utilized in the project are fine-tuned versions of various cutting-edge NLP models found within the Huggingface Transformers library.
+All the models used are built on top of the models in the Huggingface transformers library.
 
-The code for preprocessing the datasets, fine-tuning, evaluation, and inference for each component can be found in the respective folders in the models_evaluation and models_finetuning folders
+The code for fine-tuning and evaluation for each component can be found in the respective folders in the models_evaluation and models_finetuning folders
 
 
 ### Datasets:
@@ -32,7 +32,7 @@ The following datasets were used for fine-tuning various pre-trained models
 
 ### Code
 1. For each component that is described in the paper, the fine-tuning and evaluation Python notebooks can be found in the [Models Finetuning](./models_finetuning/) and [Models Evaluation](./models_evaluation/) sections.
-2. A full stack application to interact with the solution developed, including user-context tracking, developed using ReactJS, and Flask is included in the [Application](./application/) directory. Instructions to start the application is available at [Instructions](./application/README.md)
+2. A full stack application to interact with the solution developed, including user-context tracking, developed using ReactJS, and Flask is included in the [Application](./application/) directory. Instructions to start the application is present in the [Instructions](./application/README.md)
 
 
 ### Additional Models
