@@ -39,11 +39,9 @@ class RedditGenerator:
     ):
         self.reddit_tokenizer = AutoTokenizer.from_pretrained(
             "skunusot/finetuned-reddit-gpt2",
-            use_auth_token="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",
         )
         self.reddit_model = AutoModelWithLMHead.from_pretrained(
             "skunusot/finetuned-reddit-gpt2",
-            use_auth_token="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",
         )
 
     def generate_response_from_generator(self, input_text, multiple=True):

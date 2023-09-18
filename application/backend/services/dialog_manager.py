@@ -101,29 +101,25 @@ class DialogManager:
         self.intent_tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
         self.ner_tokenizer = AutoTokenizer.from_pretrained(
             "sentientconch/final_ner",
-            use_auth_token="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",
         )
 
         # Init models
         self.topic_model = AutoModelForSequenceClassification.from_pretrained(
             "sentientconch/topic_classifier",
             num_labels=6,
-            use_auth_token="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",
         )
-        # self.intent_model = RobertaForSequenceClassification.from_pretrained('sentientconch/intent_classifier_short_sent', num_labels=3, use_auth_token='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')
+        # self.intent_model = RobertaForSequenceClassification.from_pretrained('sentientconch/intent_classifier_short_sent', num_labels=3)
         self.intent_model = DistilBertForSequenceClassification.from_pretrained(
             "sentientconch/intent_classifier_large",
             num_labels=3,
-            use_auth_token="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",
         )
-        # self.ner_model = AutoModelForTokenClassification.from_pretrained("sentientconch/final_ner", use_auth_token='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')
+        # self.ner_model = AutoModelForTokenClassification.from_pretrained("sentientconch/final_ner")
 
         # self.ner_pipeline = pipeline(model=self.ner_model, tokenizer=self.ner_tokenizer,  aggregation_strategy="simple")
         self.ner_pipeline = pipeline(
             "ner",
             model="sentientconch/final_ner",
             aggregation_strategy="first",
-            use_auth_token="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",
         )
         # bi-encoder to measure sentence similarity
         self.besm = SentenceTransformer("all-mpnet-base-v2")

@@ -7,11 +7,9 @@ class ChitChatGenerator:
     ):
         self.chitchat_model = T5ForConditionalGeneration.from_pretrained(
             "madhavappaneni/t5-small-chit-chat-conv",
-            use_auth_token="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",
         )
         self.chitchat_tokenizer = T5Tokenizer.from_pretrained(
             "madhavappaneni/t5-small-chit-chat-conv",
-            use_auth_token="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",
         )
 
     def generate_response(self, input_text, context):
