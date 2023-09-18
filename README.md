@@ -14,6 +14,10 @@ This paper presents the development of an empathetic chatbot that employs Natura
 
 This project aims to create an end-to-end conversational system capable of delivering empathetic interactions and effectively sharing opinions and factual information on Politics, Environment, Technology, Healthcare, and Education. The analysis presented in this paper provides insights into the components and approaches implemented in developing our chatbot.
 
+[Project Report](./Project%20Report.pdf)
+
+[Project Slides](./Project%20Slides.pdf)
+
 ### Training and Inference
 
 The models utilized in the project are fine-tuned versions of various cutting-edge NLP models found within the Huggingface Transformers library.
