@@ -7,11 +7,9 @@ class EmpatheticDialogGenerator:
     ):
         self.empathetic_dialogue_model = AutoModelForSeq2SeqLM.from_pretrained(
             "madhavappaneni/t5-small-empathetic-dialogue",
-            use_auth_token="***REMOVED***",
         )
         self.empathetic_dialogue_tokenizer = AutoTokenizer.from_pretrained(
             "madhavappaneni/t5-small-empathetic-dialogue",
-            use_auth_token="***REMOVED***",
         )
 
     def generate_response(self, input_text, context):
