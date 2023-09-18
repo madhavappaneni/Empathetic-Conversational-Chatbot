@@ -31,10 +31,11 @@ The following datasets were used for fine-tuning various pre-trained models
 4. [Custom sourced data from Reddit](https://drive.google.com/file/d/1ODMJmQzGKN5Y0AbSJrMgWBoolztgEx3_/view) with conversations from varied topics like Education, Politics, Healthcare, Environment, etc.
 
 ### Additional Models
-To reproduce paper numbers, use the following trained models
+To reproduce paper numbers, use the following fine-tuned models
 
-1. T5-Small based chit chat conversation generator (https://huggingface.co/madhavappaneni/t5-small-chit-chat-conv)
-2. T5-Small based empathetic dialogue generator (https://huggingface.co/madhavappaneni/t5-small-empathetic-dialogue)
+1. [T5-Small based chit chat conversation generator](https://huggingface.co/madhavappaneni/t5-small-chit-chat-conv)
+2. [T5-Small based empathetic dialogue generator](https://huggingface.co/madhavappaneni/t5-small-empathetic-dialogue)
+3. [GPT2 based topical dialogue generator](https://shuggingface.co/madhavappanenit5-small-empathetic-dialogue)
 
 ## References
 
