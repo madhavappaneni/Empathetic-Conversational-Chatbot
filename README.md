@@ -1,58 +1,50 @@
-1. The training and evaluation code for the Chitchat Generator can be found here.
+# Topic based Empathetic Chatbot
 
-| Name                                       |                          Location                           | Task Owner                 |
-| :----------------------------------------- | :---------------------------------------------------------: | -------------------------- |
-| ChitChat Generator - Final Training        |      [Link](milestone3/madhavap/ChitChatGenerator-T5)       | Madhav Appaneni (madhavap) |
-| ChitChat Generator - Final Evaluation      |   [Link](evaluation/madhavap/final/ChitChat%20Generator)    | Madhav Appaneni (madhavap) |
-| ChitChat Generator - Milestone2 Training   |        [Link](milestone2/madhavap/ChitChatGenerator)        | Madhav Appaneni (madhavap) |
-| ChitChat Generator - Milestone2 Evaluation | [Link](evaluation/madhavap/milestone2/ChitChat%20Generator) | Madhav Appaneni (madhavap) |
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-2. The training and evaluation code for the Empathetic Dialog Generator can be found here.
+This is the implementation of the paper:
 
-| Name                                                |                                 Location                                 | Task Owner                 |
-| :-------------------------------------------------- | :----------------------------------------------------------------------: | -------------------------- |
-| Empathetic Dialog Generator - Final Training        |            [Link](milestone3/madhavap/EmpatheticGenerator-T5)            | Madhav Appaneni (madhavap) |
-| Empathetic Dialog Generator - Final Evaluation      |   [Link](evaluation/madhavap/final/Empathetic%20Dialogue%20Generator)    | Madhav Appaneni (madhavap) |
-| Empathetic Dialog Generator - Milestone2 Training   |             [Link](milestone2/madhavap/EmpatheticGenerator)              | Madhav Appaneni (madhavap) |
-| Empathetic Dialog Generator - Milestone2 Evaluation | [Link](evaluation/madhavap/milestone2/Empathetic%20Dialogue%20Generator) | Madhav Appaneni (madhavap) |
+## [**Topic Based Empathetic Chatbot Focusing on Sentiments**](https://drive.google.com/file/d/10EM9ng-kbrNWuSgi0y2rAqMqazvx1DaX/view?usp=drive_link).
 
-3. The training and evaluation code for the Reddit Generator can be found here.
+[**Madhav Appaneni**](https://www.linkedin.com/in/madhav-appaneni/)
 
-| Name                                     |                                              Location                                              | Task Owner                  |
-| :--------------------------------------- | :------------------------------------------------------------------------------------------------: | --------------------------- |
-| Reddit Generator - Final Training        |                        [Link](milestone3/skunusot/RedditdataGPT2Training.ipynb)                         | Sandeep Kunusoth (skunusot) |
-| Reddit Generator - Final Evaluation      |                  [Link](evaluation/skunusot/final/RedditdataGPT2Evaluation.ipynb)                  | Sandeep Kunusoth (skunusot) |
-| Reddit Generator - Milestone2 Training   |                      [Link](milestone2/skunusot/RedditdataGPT2Training.ipynb)                      | Sandeep Kunusoth (skunusot) |
-| Reddit Generator - Milestone2 Evaluation |               [Link](evaluation/skunusot/milestone2/RedditdataGPT2Evaluation.ipynb)                | Sandeep Kunusoth (skunusot) |
-| Reddit Preprocessed Data set Link        | [Google Drive](https://drive.google.com/file/d/1ODMJmQzGKN5Y0AbSJrMgWBoolztgEx3_/view?usp=sharing) | Sandeep Kunusoth (skunusot) |
+## Abstract
 
-4. The training and evaluation code for NER can be found here.
+This paper presents the development of an empathetic chatbot that employs Natural Language Processing (NLP) techniques to engage in chitchat and topical conversations while providing empathetic responses. Chatbots have shown proficiency in specific tasks like providing information and personal assistance. However, their effectiveness in open-ended conversations requires improvement. This need has prompted the development of social bots that aim to communicate with users using human-like emotion, inflection, slang, and other qualities that contribute to a generous conversation.
 
-| Name                          |                     Location                     | Task Owner                      |
-| :---------------------------- | :----------------------------------------------: | ------------------------------- |
-| NER - Milestone3 Training     |   [Link](milestone3/pnekkala/final_ner.ipynb)    | Praneeth Nekkalapudi (pnekkala) |
-| NER - Milestone2 Training     |  [Link](milestone2/pnekkala/baseline_ner.ipynb)  | Praneeth Nekkalapudi (pnekkala) |
-| NER - Milestone2,3 Evaluation | [Link](evaluation/pnekkala/ner_evaluation.ipynb) | Praneeth Nekkalapudi (pnekkala) |
+This project aims to create an end-to-end conversational system capable of delivering empathetic interactions and effectively sharing opinions and factual information on Politics, Environment, Technology, Healthcare, and Education. The analysis presented in this paper provides insights into the components and approaches implemented in developing our chatbot.
 
-5. The training and evaluation code for Intent Classifier can be found here.
+### Training and Inference
 
-| Name                                        |                              Location                              | Task Owner                      |
-| :------------------------------------------ | :----------------------------------------------------------------: | ------------------------------- |
-| Intent Classifier - Milestone3 Training     |     [Link](milestone3/pnekkala/final_intent_classifier.ipynb)      | Praneeth Nekkalapudi (pnekkala) |
-| Intent Classifier - Milestone2 Training     |    [Link](milestone2/pnekkala/baseline_intent_classifier.ipnyb)    | Praneeth Nekkalapudi (pnekkala) |
-| Intent Classifier - Milestone2,3 Evaluation | [Link](evaluation/pnekkala/intent_classification_evaluation.ipynb) | Praneeth Nekkalapudi (pnekkala) |
+All the models used are built on top of the models in the Huggingface transformers library.
 
-6. The training and evaluation code for Topic Classifier can be found here.
+The code for fine-tuning and evaluation for each component can be found in the respective folders in the models_evaluation and models_finetuning folders
 
-| Name                                       |                           Location                            | Task Owner                      |
-| :----------------------------------------- | :-----------------------------------------------------------: | ------------------------------- |
-| Topic Classifier - Milestone3 Training     |   [Link](milestone3/pnekkala/final_topic_classifier.ipynb)    | Praneeth Nekkalapudi (pnekkala) |
-| Topic Classifier - Milestone2 Training     |  [Link](milestone2/pnekkala/baseline_topic_classifier.ipnyb)  | Praneeth Nekkalapudi (pnekkala) |
-| Topic Classifier - Milestone2,3 Evaluation | [Link](evaluation/pnekkala/topic_classifier_evaluation.ipynb) | Praneeth Nekkalapudi (pnekkala) |
 
-7. Sentence Completion training and inference code can be found here.
+### Datasets:
 
-| Name                                      |                            Location                             | Task Owner                      |
-| :---------------------------------------- | :-------------------------------------------------------------: | ------------------------------- |
-| Sentence Completion - Milestone3 Training |      [Link](milestone3/pnekkala/sentence_completion.ipynb)      | Praneeth Nekkalapudi (pnekkala) |
-| Sentencce Completion - Inference          | [Link](milestone2/pnekkala/sentence_completion_inference.ipnyb) | Praneeth Nekkalapudi (pnekkala) |
+The following datasets were used for fine-tuning various pre-trained models 
+1. [BYU-PCCL chitchat-dataset](https://github.com/BYU-PCCL/chitchat-dataset)
+2. [Facebook Research - EmpatheticDialogues
+](https://github.com/facebookresearch/EmpatheticDialogues)
+3. [Microsoft Botframework - QnA Maker](https://github.com/microsoft/botframework-cli/blob/main/packages/qnamaker/docs/chit-chat-dataset.md)
+4. [Custom sourced data from Reddit](https://drive.google.com/file/d/1ODMJmQzGKN5Y0AbSJrMgWBoolztgEx3_/view) with conversations from varied topics like Education, Politics, Healthcare, Environment, etc.
+
+### Additional Models
+To reproduce paper numbers, use the following trained models
+
+1. T5-Small based chit chat conversation generator (https://huggingface.co/madhavappaneni/t5-small-chit-chat-conv)
+2. T5-Small based empathetic dialogue generator (https://huggingface.co/madhavappaneni/t5-small-empathetic-dialogue)
+
+## References
+
+Please cite if you found the resources in this repository useful.
+
+```bibtex
+@inproceedings{madhav2023topic,
+    title = {Topic Based Empathetic Chatbot},
+    author = {Madhav Appaneni},
+    month = {may},
+    year = {2023}
+}
+```
