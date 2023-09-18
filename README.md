@@ -32,7 +32,7 @@ The following datasets were used for fine-tuning various pre-trained models
 
 ### Code
 1. For each component that is described in the paper, the fine-tuning and evaluation Python notebooks can be found in the [Models Finetuning](./models_finetuning/) and [Models Evaluation](./models_evaluation/) sections.
-2. A full stack application to interact with the solution developed, including user-context tracking, developed using ReactJS, and Flask is included in the [Application](./application/) directory. Instructions to start the application is available at [Instructions](./application/README.md)
+2. A full stack application to interact with the solution developed, including user-context tracking, developed using AngularJS, and Flask is included in the [Application](./application/) directory. Instructions to start the application is available at [Instructions](./application/README.md)
 
 
 ### Additional Models
